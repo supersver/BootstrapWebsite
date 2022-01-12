@@ -1,0 +1,233 @@
+body,
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;/* use to fix over-width */ 
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(1, 143, 25);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(4, 100, 4);
+  }
+
+/**********************/
+   /* Navbar style */
+/**********************/
+#navbarHome {
+    margin-left: 5rem;
+  }
+  
+  #navbarActive,
+  #navbarDropdown {
+    border-radius: 15px;
+  }
+  
+  /* mouse over link */
+  #navbarActive:hover,
+  #navbarDropdown:hover {
+    color: whitesmoke;
+    background-color: gray;
+    border-radius: 15px;
+  }
+  
+  /* selected link */
+  #navbarActive:active {
+    color: yellow;
+  }
+  
+  #navbarImg {
+    margin-top: -20px;
+  }
+  #navImgDropdown {
+  margin-left: -6rem;
+  }
+   /* hidden from desktop */
+   #navbarImgMobile {
+    display: none;
+  }
+  
+  .user-avatar-xxl {
+    height: 128px;
+    width: 128px
+  }
+  
+  .user-avatar-xl {
+    height: 90px;
+    width: 90px
+  }
+  
+  .user-avatar-lg {
+    height: 48px;
+    width: 48px
+  }
+  
+  .user-avatar-md {
+    height: 32px;
+    width: 32px
+  }
+  
+  .user-avatar-sm {
+    height: 24px;
+    width: 24px
+  }
+  
+  .user-avatar-xs {
+    height: 18px;
+    width: 18px
+  }
+  /*****************/
+   /* Navbar END */
+  /*****************/
+  
+  
+.schedule-bg {
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/price-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(50%);
+}
+.schedule-content {
+position: absolute;
+  font-family: "Monserrat", sans-serif;
+  color: white;
+ top: 8rem;
+  text-align: center;
+  margin: 0.625rem;
+}
+.schedule-title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+
+.calenderBox {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+    width: 90%;
+}
+
+ /* footer */
+ #contactNmbr {
+    color: #fff;
+    text-decoration: none;
+  }
+  #contactNmbr:hover {
+    color: #cb376a;
+  }
+   /* Footer home button */
+   #btnFooter {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 5px;
+}
+#btnFooter:hover {
+    background-color: rgb(65, 68, 65);
+    color: #eee;
+}
+@media (max-width:575px) {
+    .display-4 {
+        font-size: 1.5rem;
+    }
+    .day h5 {
+        background-color: #f8f9fa;
+        padding: 3px 5px 5px;
+        margin: -8px -8px 8px -8px;
+    }
+    .date {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 576px) {
+    .day {
+        height: 14.2857vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones */
+
+
+  /* Footer */
+  #footerAbout {
+    width: 50%;
+  }
+  #footerContact {
+    width: 50%;
+  }
+  #footerHours {
+    width: 60%;
+  } 
+  #footerSubs {
+    width: 100%;
+  }
+  .offset-1 {
+    margin-left: 0%;
+  }
+  /* navbar */
+  #navbarHome {
+    margin-left: 16px;
+     border-radius: 15px;
+   }
+   /* mobile hidden */
+   #navbarImg,
+   #navImgDropdown {
+     display: none;
+   }
+   /* for mobile */
+   #navbarImgMobile {
+     display: contents;
+     margin: 0;
+    padding: 0;
+    text-align: right;
+   }
+   #navDropdownMobile {
+     margin-right: 6rem;
+   }
+   
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
